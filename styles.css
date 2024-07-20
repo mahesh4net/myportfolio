@@ -1,1 +1,55 @@
-/* welcome, this is css file /*
+* {
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+ font-family: sans-serif
+ 
+}
+
+.nav {
+  background-color: orangered;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+ul {
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+  display: inline;
+  width: 33%;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: black;
+  background-color: seagreen;
+}
+
+  
+
+
+.main {
+  margin-top: 35px;
+  background-color: lightpink;
+  padding: 50px 10px;
+}
+
+.skills {
+  background-color: lightblue;
+  padding: 50px 10px;
+}
