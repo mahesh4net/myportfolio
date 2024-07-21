@@ -2,17 +2,15 @@
  margin: 0px;
  padding: 0px;
  font-family: sans-serif;
- overflow: hidden;
  box-sizing: border-box;
 }
 
 
 .nav {
-  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(171,6,15,1) 33%, rgba(82,0,0,1) 100%);
+  background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(171,6,15,1) 33%, rgba(82,0,0,1) 100%);
   position: fixed;
   top: 0px;
   width: 100%;
-  overflow-x: hidden;
 }
 
 ul {
@@ -160,6 +158,106 @@ img {
 
 }
 
+
+
+.main button {
+  position: relative;
+  padding: 10px 20px;
+  margin: 8px 0px;
+  background-color: white; /* Inner background color */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Adjust as needed */
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+ 
+  z-index: 1; /* Ensure button is above the pseudo-element */
+}
+
+.main button::before {
+  content: "";
+  color: red;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, rgba(255,0,93,1) 6%, rgba(255,1,245,1) 48%);
+  position: absolute;
+  padding: 10px 21px;
+  z-index: -2;
+  left: -3px;
+  top: -2px;
+  bottom: -2px;
+  right: -3px;
+}
+
+.main button::after {
+  content: "";
+  color: red;
+  border-radius: 12px;
+  background: white;
+  position: absolute;
+  padding: 10px 21px;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.main button:hover::after  {
+  background: black;
+}
+.main button:hover {
+  color: white;
+}
+
+.main button:hover::before {
+animation-name: rotate;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: linear;
+}
+
+@keyframes rotate {
+  5% {
+    background-image: linear-gradient(90deg, rgba(255,0,93,1) 6%, rgba(255,1,245,1) 48%);
+  }
+  10% {
+    background-image: linear-gradient(110deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  20% {
+    background-image: linear-gradient(120deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  25% {
+    background-image: linear-gradient(140deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  30% {
+    background-image: linear-gradient(150deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  40% {
+    background-image: linear-gradient(170deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  
+  50% {
+    background-image: linear-gradient(180deg, rgba(255,0,93,1) 6%, rgba(255,1,245,1) 48%);
+  }
+  60% {
+    background-image: linear-gradient(190deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  70% {
+    background-image: linear-gradient(270deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  80% {
+    background-image: linear-gradient(300deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  90% {
+    background-image: linear-gradient(350deg, rgba(255, 0, 93, 1) 6%, rgba(255, 1, 245, 1) 48%);
+  }
+  100% {
+    background-image: linear-gradient(450deg, rgba(255,0,93,1) 6%, rgba(255,1,245,1) 48%);
+  }
+}
+
+
 @media only screen and (min-width: 400px) {
   .main h1 {
     font-size: 50px;
@@ -170,25 +268,8 @@ img {
   .main {
     background-image: url(/images/homedesk.jpeg);
   }
-}
-
-.main button {
-  padding: 5px 10px;
-  margin: 8px 0px;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  transition: transform 0.5s;
-  font-weight: medium;
-  box-shadow: 2px 2px 5px black;
-}
-
-.main button:hover {
-  background-color: greenyellow;
-  border-radius: 10px;
-  color: black;
-  border: 3px solid white;
-  transform: scale(1.05)
+  .main button {
+    font-size: 35px;
+    box-sizing: content-box;
+  }
 }
