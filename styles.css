@@ -1,16 +1,18 @@
 * {
- box-sizing: border-box;
  margin: 0px;
  padding: 0px;
- font-family: sans-serif
- 
+ font-family: sans-serif;
+ overflow: hidden;
+ box-sizing: border-box;
 }
 
+
 .nav {
-  background-color: orangered;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(171,6,15,1) 33%, rgba(82,0,0,1) 100%);
   position: fixed;
   top: 0px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 ul {
@@ -20,7 +22,7 @@ ul {
 nav ul li {
   position: relative;
   display: inline;
-  width: 33%;
+  
   
 }
 
@@ -28,28 +30,165 @@ nav ul li a {
   text-decoration: none;
   display: inline;
   float: left;
-  width: 33.33%;
+  width: 20%;
   text-align: center;
-  padding: 10px 0px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
   color: white;
   font-weight: bold;
+  font-size: 12px;
 }
 
 nav ul li a:hover {
-  color: black;
-  background-color: seagreen;
+  color: lightblue;
+  font-size: 14px;
 }
 
   
 
 
 .main {
-  margin-top: 35px;
+  margin-top: 36px;
   background-color: lightpink;
   padding: 50px 10px;
+  width: 100%;
+  background-image: url(/images/home.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  
+  
+}
+
+.main h1 {
+  font-size: 25px;
+}
+
+.main h1, .main p {
+  text-shadow: 2px 2px 10px black;
+}
+
+
+.about {
+  background-color: #f5e9e9;
+  padding: 50px 10px;
+  text-align: center;
+  background-image: url(/images/logobg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .skills {
-  background-color: lightblue;
+  background-color: #dbd0d0;
   padding: 50px 10px;
+}
+
+.projects {
+  background-color: #f5e9e9;
+  padding: 50px 10px;
+}
+
+.contact {
+  background-color: #dbd0d0;
+  padding: 50px 10px;
+}
+
+.about-box {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-top: 10px;
+}
+
+.general {
+  background-color: #9fc425;
+  box-shadow: 2px 2px 7px;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0px;
+  transition: scale 1s;
+  flex-grow: 1.5;
+  width:45%;
+}
+
+.general:hover {
+  background-color: #63992e;
+  transform: scale(1.02);
+
+}
+
+.education {
+  background-color: #9fc425;
+  box-shadow: 2px 2px 7px;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0px;
+  transition: scale 1s;
+  flex-grow: 1.5;
+  width: 45%;
+}
+
+.education:hover {
+  background-color: #63992e;
+  transform: scale(1.02);
+
+}
+
+@media only screen and (max-width: 400px) {
+  .general, .education {
+    width: 100%;
+  }
+}
+
+img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.intro {
+
+}
+
+@media only screen and (min-width: 400px) {
+  .main h1 {
+    font-size: 50px;
+  }
+  .main p {
+    font-size: 35px;
+  }
+  .main {
+    background-image: url(/images/homedesk.jpeg);
+  }
+}
+
+.main button {
+  padding: 5px 10px;
+  margin: 8px 0px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.5s;
+  font-weight: medium;
+  box-shadow: 2px 2px 5px black;
+}
+
+.main button:hover {
+  background-color: greenyellow;
+  border-radius: 10px;
+  color: black;
+  border: 3px solid white;
+  transform: scale(1.05)
 }
