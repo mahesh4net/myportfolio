@@ -5,6 +5,17 @@
  box-sizing: border-box;
 }
 
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+p {
+  font-size: 3vw;
+}
 
 .nav {
   background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(171,6,15,1) 33%, rgba(82,0,0,1) 100%);
@@ -36,21 +47,21 @@ nav ul li a {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 3.4vw;
   position: relative;
 }
 
 nav ul li a:hover:before {
   content: "";
   background: mediumslateblue;
-  padding: 2px 20px;
+  padding: 0.4vw 8vw;
   border-radius: 1px;
   position: absolute;
-  top: 30px;
+  bottom: 1vh;
   left: 0px;
   right: 0px;
   
@@ -58,14 +69,14 @@ nav ul li a:hover:before {
 
 nav ul li a:hover {
   color: white;
-  font-size: 14px;
+  font-size: 3.6vw;
 }
 
   
 
 
 .main {
-  margin-top: 36px;
+  margin-top: 5vh;
   background-color: lightpink;
   padding: 50px 10px;
   width: 100%;
@@ -79,7 +90,7 @@ nav ul li a:hover {
 }
 
 .main h1 {
-  font-size: 25px;
+  font-size: 4vw;
 }
 
 .main h1, .main p {
@@ -195,13 +206,13 @@ nav ul li a:hover {
 
 .main button {
   position: relative;
-  padding: 10px 20px;
-  margin: 8px 0px;
+  padding: 1vh 2vw;
+  margin: 1vh 0vh;
   background-color: white; /* Inner background color */
   border: none; /* Remove default border */
   border-radius: 10px; /* Adjust as needed */
   color: black;
-  font-size: 16px;
+  font-size: 4vw;
   font-weight: bold;
   cursor: pointer;
  
@@ -292,21 +303,7 @@ animation-direction: linear;
 }
 
 
-@media only screen and (min-width: 400px) {
-  .main h1 {
-    font-size: 50px;
-  }
-  .main p {
-    font-size: 35px;
-  }
-  .main {
-    
-  }
-  .main button {
-    font-size: 35px;
-    box-sizing: content-box;
-  }
-}
+
 
 .skillset {
   display: grid;
