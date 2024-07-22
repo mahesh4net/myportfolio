@@ -69,7 +69,7 @@ nav ul li a:hover {
   background-color: lightpink;
   padding: 50px 10px;
   width: 100%;
-  background-image: url(/images/home.jpeg);
+  background-image: url(images/home.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -103,7 +103,7 @@ nav ul li a:hover {
   background-color: #EDEDE9;
   padding: 50px 10px;
   text-align: center;
-  background-image: url(/images/logobg.jpeg);
+  background-image: url(images/logobg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -374,13 +374,13 @@ animation-direction: linear;
 }
 
 #s2 img:hover {
- content: url('/images/htmlbw.png');
+ content: url('images/htmlbw.png');
 }
 
 #s3 img:hover {
-  content: url('/images/cssbw.png');
+  content: url('images/cssbw.png');
 }
 
 #s6 img:hover {
-  content: url('/images/jsbw.png');
+  content: url('images/jsbw.png');
 }
