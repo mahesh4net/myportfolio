@@ -185,11 +185,16 @@ nav ul li a:hover {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .general, .education {
     width: 100%;
   }
 }
+
+  .mobile, .tablet {
+    width: 100%;
+  }
+
 
 .intro img {
   width: 40%;
