@@ -6,15 +6,15 @@
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 p {
-  font-size: 3vw;
+  font-size: 2.2vw;
 }
 
 .nav {
@@ -22,6 +22,7 @@ p {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 5;
 }
 
 ul {
@@ -53,20 +54,59 @@ nav ul li a {
   font-weight: bold;
   font-size: 3.4vw;
   position: relative;
+  overflow-x: hidden;
 }
 
 nav ul li a:hover:before {
   content: "";
-  background: mediumslateblue;
+  background-color: #6301ff;
   padding: 0.4vw 8vw;
   border-radius: 1px;
   position: absolute;
   bottom: 1vh;
   left: 0px;
   right: 0px;
+  z-index: -1;
   
 }
+  
+  @keyframes barline {
+   0% {
+     left: 0vw;
+     right: 16vw;
+     padding: 0.4vw 0.5vw;
+   }
+   
+ 
+   
+   50% {
+     left: 7vw;
+     right: 7vw;
+     padding: 0.4vw 0.5vw;
+   }
+   
+  
+  100% {
+  left: 16vw;
+  right: 0vw;
+  padding: 0.4vw 0.4vw;
+  }
+}
 
+nav ul li a:hover:after {
+  content: "";
+  background-color: #00ddff;
+  padding: 0.4vw 0.4vw;
+  border-radius: 1px;
+  position: absolute;
+  bottom: 1vh;
+  left: 0px;
+  right: 0px;
+  animation: barline 0.6s linear infinite alternate;
+  z-index: 1;
+  
+}
+  
 nav ul li a:hover {
   color: white;
   font-size: 3.6vw;
@@ -121,10 +161,38 @@ nav ul li a:hover {
 }
 
 .skills {
-  background-color: #EDEDE9;
+  background-color: #2B2D42;
   padding: 50px 0px;
   text-align: center;
   width: 100%;
+  color: white;
+}
+
+.skills h1 {
+  color: white;
+  display: inline-block;
+  border: 2px solid whitesmoke;
+  padding: 5px 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+.skills h1:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.03);
+}
+
+.skills img:first-child {
+  width: 25vw;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.skills img:first-child:hover {
+  transform: scale(1.03);
 }
 
 .projects {
@@ -141,10 +209,12 @@ nav ul li a:hover {
 
 .about-box {
   display: flex;
+  flex-direction: row;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 5px;
+  row-gap: 8px;
+  column-gap: 10px;
   column-gap: 5px;
   margin-top: 10px;
 }
@@ -154,11 +224,11 @@ nav ul li a:hover {
   box-shadow: 2px 2px 7px;
   border: solid black 3px;
   border-radius: 10px;
-  padding: 5px;
-  margin: 0px;
+  padding: 10px;
+  margin: 5px;
   transition: scale 1s;
   flex-grow: 1.5;
-  width:45%;
+  width: 47%;
 }
 
 .general:hover {
@@ -172,11 +242,12 @@ nav ul li a:hover {
   box-shadow: 2px 2px 7px;
   border: solid black 3px;
   border-radius: 10px;
-  padding: 5px;
-  margin: 0px;
+  padding: 10px;
+  margin: 5px;
   transition: scale 1s;
   flex-grow: 1.5;
-  width: 45%;
+  width: 47%;
+  
 }
 
 .education:hover {
@@ -187,13 +258,27 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 800px) {
   .general, .education {
+    flex-direction: column;
     width: 100%;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+  
+  h2 {
+    font-size: 5vw;
+  }
+  
+  p {
+    font-size: 4.3vw;
   }
 }
 
   .mobile, .tablet {
     width: 100%;
   }
+  
+ 
 
 
 .intro img {
@@ -315,55 +400,58 @@ animation-direction: linear;
   grid-template-columns: repeat(5, 1fr); /* Three equal columns */
     /* Three rows with automatic height */
   gap: 0px;
-  background-color: lightblue;
+  background-color: #2B2D42;
   max-width: 100%;
-  overflow-x: hidden;
-  margin-top: 10px;
-}
+  overflow: hidden;
+  
+  place-items: center;
+}  
+ 
+  
 
 .skillset section {
     padding: 20px 0px;
     box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
     text-align: center;
-    
- 
 }
-
+    
 #s1 {
   grid-column: span 4; /* Span 2 columns */
   grid-row: 1; 
-  background-color: #495057;
+ 
  /* Span the first column */
 }
 
 #s2 {
  grid-column: span 1; /* Span 1 column */
   grid-row: 1;
-  background-color: #495057;
+  
 }
 
 #s3 {
   grid-column: span 1; /* Span 1 column */
   grid-row: 2;
-  background-color: #343A40;
+  
 }
 
 #s4 {
   grid-column: span 4; /* Span 2 columns */
   grid-row: 2; 
-  background-color: #343A40;/* Span the second column */
+ /* Span the second column */
 }
 
 #s5 {
   grid-column: span 4; /* Span 2 columns */
   grid-row: 3;
-  background-color: #495057;/* Span the first column */
+  /* Span the first column */
 }
 
 #s6 {
   grid-column: span 1; /* Span 1 column */
   grid-row: 3;
-  background-color: #495057;
+  
 }
 
 .intro img:hover {
@@ -371,8 +459,11 @@ animation-direction: linear;
 }
 
 #s2 img, #s3 img, #s6 img {
+  box-sizing: content-box;
   width: 80%;
-  height: auto;
+  padding: auto 0px;
+  
+  
 }
 
 #s2 img:hover {
@@ -386,3 +477,4 @@ animation-direction: linear;
 #s6 img:hover {
   content: url('images/jsbw.png');
 }
+
