@@ -737,3 +737,7 @@ footer .img3:hover {
   content: url('images/linkedin.png');
   transform: scale(1.06);
 }
+
+html {
+  scroll-behavior: smooth;
+}
