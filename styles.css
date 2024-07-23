@@ -6,17 +6,17 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 7.6vw;
   line-height: 1.4em;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 7.1;
   line-height: 1.4em;
 }
 
 p {
-  font-size: 16px;
+  font-size: 4vw;
   line-height: 1.4em;
 }
 
@@ -55,7 +55,7 @@ nav ul li a {
   padding-bottom: 2vh;
   color: white;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 3.2vw;
   position: relative;
   overflow-x: hidden;
 }
@@ -118,7 +118,7 @@ nav ul li a:hover:after {
   
 nav ul li a:hover {
   color: white;
-  font-size: 14px;
+  font-size: 3.4vw;
 }
 
   
@@ -139,11 +139,11 @@ nav ul li a:hover {
 }
 
 .main h1 {
-  font-size: 30px;
+  font-size: 7.6vw;
 }
 
 .main span {
-  font-size: 32px;
+  font-size: 8.1vw;
 }
 
 .main h1, .main p {
@@ -270,35 +270,7 @@ nav ul li a:hover {
 
 }
 
-@media screen and (min-width: 800px) {
-  .general, .education {
-    width: 48%;
-  }
-  h1 {
-    font-size: 36px;
-    line-height: 1.4em;
-  }
-  
-  h2 {
-    font-size: 33px;
-    line-height: 1.4em;
-  }
-  
-  p {
-    font-size: 18px;
-    line-height: 1.4em;
-  }
-  .main h1 {
-    font-size: 31px;
-  }
-  
-  .main span {
-    font-size: 33px;
-  }
-  
-  
-  
-}
+
 
 
 
@@ -386,11 +358,7 @@ animation-iteration-count: infinite;
 animation-direction: linear;
 }
 
-@media screen and (min-width: 800px) {
-  .main a {
-    font-size: 3.5vw;
-  }
-}
+
 
 @keyframes rotate {
   5% {
@@ -496,26 +464,7 @@ animation-direction: linear;
 
 
 
-@media  screen and  (min-width: 800px) {
-  
-.skillset {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  row-gap: 5px;
-  column-gap: 5px;
-  flex-wrap: wrap;
-}
 
-.skillset .skillitem {
-  padding: 15px 10px;
-  margin: 10px 8px;
-  text-align: center;
-  width: 30%;
- 
-}
-}
 
 .projects img {
   width: 20vw;
@@ -565,7 +514,7 @@ animation-direction: linear;
 }
 
 .project-box img {
-  width: 12%;
+  width: 12vw;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -10px;
@@ -590,27 +539,7 @@ animation-direction: linear;
   
 }
 
-@media  screen and  (min-width: 800px) {
-  
-  .project-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  
-  
-  }
-  
-  .project-box .pitem {
-    text-align: center;
-    width: 30%;
-    flex-grow: 1;
-    margin: 20px 5px 10px 5px;
-   
-  
-  }
-}
+
 
 .contact h1 {
   color: white;
@@ -655,7 +584,7 @@ animation-direction: linear;
             border: 2px solid white;
             background-color: #f9f9f9;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 4vw;
             transition: border 0.3s;
         }
      
@@ -670,7 +599,7 @@ animation-direction: linear;
             border-radius: 5px;
             background-color: #007BFF;
             color: white;
-            font-size: 16px;
+            font-size: 4vw;
             cursor: pointer;
             transition: background-color 0.3s;
         }
@@ -691,17 +620,7 @@ animation-direction: linear;
    width: 100%;
  }
  
- @media screen and (min-width: 800px) {
-   .fname, .lname {
- width: 100%;
- }
- .contactbox {
-   width: 70%;
-   margin-left: auto;
-   margin-right: auto;
- }
- 
- }
+
 
 
 footer {
@@ -767,3 +686,137 @@ html {
    
  
  }
+ 
+ input::placeholder,
+textarea::placeholder {
+    font-size: 4vw;
+}
+
+@media screen and (min-width: 800px) {
+   input::placeholder,
+   textarea::placeholder {
+     font-size: 2.5vw;
+   }
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+  .general, .education {
+    width: 48%;
+  }
+  h1 {
+    font-size: 5.5vw;
+    line-height: 1.4em;
+  }
+  
+  h2 {
+    font-size: 4.8vw;
+    line-height: 1.4em;
+  }
+  
+  p {
+    font-size: 2.4vw;
+    line-height: 1.4em;
+  }
+  .main h1 {
+    font-size: 5.5;
+  }
+  
+  .main span {
+    font-size: 8vw;
+  }
+  
+  
+  
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .main a {
+    font-size: 3.5vw;
+  }
+}
+
+
+
+
+
+
+ @media screen and (min-width: 800px) {
+   .fname, .lname {
+ width: 100%;
+ }
+ .contactbox {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ 
+ }
+ 
+ 
+ 
+ @media screen and (min-width: 800px) {
+ 
+   .skillset {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     row-gap: 5px;
+     column-gap: 5px;
+     flex-wrap: wrap;
+   }
+ 
+   .skillset .skillitem {
+     padding: 15px 10px;
+     margin: 10px 8px;
+     text-align: center;
+     width: 30%;
+ 
+   }
+ }
+ 
+ 
+ 
+ 
+ @media screen and (min-width: 800px) {
+ 
+   .project-box {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+ 
+ 
+   }
+ 
+   .project-box .pitem {
+     text-align: center;
+     width: 30%;
+     flex-grow: 1;
+     margin: 20px 5px 10px 5px;
+ 
+ 
+   }
+  
+   
+   .projects img {
+     width: 15vw;
+   }
+ }
+ 
+ @media screen and (min-width: 800px) {
+   .project-box img {
+     width: 8vw;
+   }
+ }
+ 
+ 
+ 
+ 
