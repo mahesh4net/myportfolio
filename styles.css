@@ -616,3 +616,124 @@ animation-direction: linear;
 .contact form {
   
 }
+
+ 
+ .contactbox {
+  display: flex;
+   padding: 10px;
+   width: 100%;
+   
+  
+   justify-content: center;
+   align-items: center;
+   
+   padding: 20px 10px;
+   margin-bottom: 10px;
+ }
+
+
+ 
+ 
+ 
+ 
+ 
+        .contactbox input,
+        .contactbox textarea {
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 10px;
+            flex-grow: 1;
+     
+            border: 2px solid white;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+     
+        .contactbox textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .contactbox button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contactbox button:hover {
+            background-color: #0056b3;
+        }
+        
+         .fname, .lname {
+ width: 49%;
+ margin: auto;
+ }
+ 
+ .email {
+   width: 100%;
+ }
+ 
+ .area {
+   width: 100%;
+ }
+ 
+ @media screen and (min-width: 800px) {
+   .fname, .lname {
+ width: 100%;
+ }
+ .contactbox {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ }
+
+
+footer {
+  width: 100%;
+  background-color: #F1FAEE;
+  padding: 0px 5px;
+  
+}
+
+footer img {
+  width: 15%;
+  margin: auto;
+  padding: 0px 5px;
+  
+}
+
+footer h1 {
+  color: black;
+  font-size: 5vw;
+  
+}
+
+footer div {
+  width: 60%;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+footer .img1:hover {
+  content: url('images/github.png');
+  transform: scale(1.08);
+}
+
+footer .img2:hover {
+  content: url('images/insta.png');
+  transform: scale(1.08);
+}
+
+footer .img3:hover {
+  content: url('images/linkedin.png');
+  transform: scale(1.06);
+}
