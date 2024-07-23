@@ -326,10 +326,11 @@ nav ul li a:hover {
 
 
 
-.main button {
+.main a {
   position: relative;
+  display: inline-block;
   padding: 1vh 2vw;
-  margin: 1vh 0vh;
+  margin: 1vh 0vw;
   background-color: white; /* Inner background color */
   border: none; /* Remove default border */
   border-radius: 10px; /* Adjust as needed */
@@ -337,11 +338,12 @@ nav ul li a:hover {
   font-size: 4vw;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
  
   z-index: 1; /* Ensure button is above the pseudo-element */
 }
 
-.main button::before {
+.main a::before {
   content: "";
   color: red;
   border-radius: 12px;
@@ -355,7 +357,7 @@ nav ul li a:hover {
   right: -3px;
 }
 
-.main button::after {
+.main a::after {
   content: "";
   color: red;
   border-radius: 12px;
@@ -369,19 +371,25 @@ nav ul li a:hover {
   right: 0px;
 }
 
-.main button:hover::after  {
+.main a:hover::after  {
   background: black;
 }
-.main button:hover {
+.main a:hover {
   color: white;
   transform: scale(1.02);
 }
 
-.main button:hover::before {
+.main a:hover::before {
 animation-name: rotate;
 animation-duration: 2s;
 animation-iteration-count: infinite;
 animation-direction: linear;
+}
+
+@media screen and (min-width: 800px) {
+  .main a {
+    font-size: 3.5vw;
+  }
 }
 
 @keyframes rotate {
@@ -712,7 +720,7 @@ footer img {
 
 footer h1 {
   color: black;
-  font-size: 5vw;
+  font-size: 4.5vw;
   
 }
 
@@ -741,3 +749,21 @@ footer .img3:hover {
 html {
   scroll-behavior: smooth;
 }
+
+
+ @media screen and (min-width: 800px) {
+   footer img {
+     width: 10%;
+     margin: auto;
+     padding: 0px 10px;
+   
+   }
+   
+   footer h1 {
+     color: black;
+     font-size: 3.5vw;
+   
+   }
+   
+   }
+ }
